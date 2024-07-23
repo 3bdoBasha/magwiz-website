@@ -1,0 +1,131 @@
+@media screen and (max-width: 868px) {
+    header ul li{
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        margin-bottom: -5px;
+    }
+
+
+    body{
+        background-position: center;
+        background-size: contain;
+    }
+
+    .main {
+        font-size: 10px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .card {
+        font-size: 12px;
+        width: 200px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    footer ul{
+        padding: 10px;
+    }
+}
+
+    
+@media screen and (max-width: 700px) {
+    header ul li{
+        display: none;
+    }
+
+
+    body{
+        background-position: center;
+        background-size: contain;
+    }
+
+    .burger-menu {
+        display: block;
+        margin-left: -300px;
+
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    section img {
+        width: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .burger-menu{
+        margin-left: -200px;
+
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main h3 {
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .burger-menu{
+        margin-left: -250px;
+
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+body{
+    display: flex;
+    justify-content: center;
+}
+    .navbar-brand{
+        margin-left: 30px;
+    }
+    .burger-menu{
+        margin-left: -50px;
+    }
+
+    .main {
+        font-size: 15px;
+    }
+
+    footer ul{
+        padding: 20px;
+    }
+
+    .main h1{
+        font-size: 15px;
+    }
+}

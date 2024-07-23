@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cairo;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.my-container nav {
+    width: 100%;
+    height: 80px;
+    padding: 8px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;  
+    background-color: #2d2d2d7a;
+    border-bottom: solid 1px #2d2d2d;
+    border-radius: 3px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: white;
+    transition: 0.2s;
+}
+
+.important {
+    text-decoration: underline;
+    background-color: #0783ca;
+    padding: 5px 20px;
+    transition: background .3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2.7px;
+}
+.my-container nav ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    top: 10px;
+    margin-top: -0.2rem;
+}
+
+
+ul .nav-link{
+    background-color: #1c5e85;
+    padding: 5px 20px;
+    transition: background .3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2.7px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.navbar-brand span {
+    font-size: 20px;
+}
+
+.navbar-brand > img {
+    width: 37px;
+    padding: 3px;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.navbar-brand > img:hover {
+    transform: scale(1.1);
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: white;
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #0783ca;
+    padding: 5px 20px;
+    transition: background .3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2.7px;
+}
+
+.important {
+    color: #ffffff; 
+}
+
+.navbar ul li a.active {
+    color: #ffffff; 
+}
+
+
+.burger-menu {
+    font-size: 30px;
+    /* margin-left: -500px; */
+    display: none;
+}

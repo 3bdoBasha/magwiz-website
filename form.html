@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | Sign up</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="respons.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="my-container" dir="rtl">
+    
+        <div class="my-container">
+            <header>
+                <nav class="navbar">
+                    <div class="navbar-brand">
+                        <img src="Verified-badge.png" alt="Logo" width="25px" height="auto" class="verified">
+                        <span style="color: white; font-weight: 600;">المزارع الحزيـن</span>
+                    </div>
+                    <a href="javascript:void(0);" class="burger-menu" onclick="toggleNavbar()" id="burger">
+                        <i class="fa fa-bars"></i>
+                    </a> 
+                    <ul>
+                        <li class="nav-item"><a href="index.html" class="important">الصفحة الرئيسية</a></li>     
+                        <li class="nav-item"><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">المشاريع</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">تسجيل الدخـول</a></li>
+                        <li class="nav-item"><a href="#sugg" class="nav-link">الإقتـراحات</a></li>
+                    </ul>
+                </nav>
+            </header>   
+</div>
+    <form class="formAll">
+        <input type="text" name="username" placeholder="Username" required minlength="8">
+        <br>
+        <input type="password" name="password" placeholder="Password" required minlength="10">
+        <br>
+        <input type="text" name="email" placeholder="Email" required>
+        <br>
+        <br>
+        <input type="submit" name="submit" class="submit">
+        <input type="reset" name="reset" class="reset">
+        <br>
+        <br>
+        <label for="check" name="check" id="check"><input type="checkbox" id="check">  Do You Read Privacy & Safety </label>
+    </form>
+</body>
+</html>
