@@ -1,4 +1,3 @@
-
 :root {
     --main-color: #0056f7;
     --hover-color: #0044cc;
@@ -26,7 +25,7 @@ html {
     background-color: rgba(0, 140, 255, 0.548);
 }
 
-section{
+section {
     padding: 50px 150px 250px;
 }
 
@@ -40,7 +39,10 @@ section{
     overflow-x: hidden;
 }
 
-.main h1, .main h3, .main .button, .main span {
+.main h1,
+.main h3,
+.main .button,
+.main span {
     color: var(--white-color);
 }
 
@@ -56,7 +58,9 @@ section{
     font-weight: 800;
 }
 
-.main .prog, .main .content-creator, .main .website-dev {
+.main .prog,
+.main .content-creator,
+.main .website-dev {
     transition: var(--transition-time);
 }
 
@@ -74,7 +78,7 @@ section{
 
 .main .website-dev:hover {
     color: rgb(0, 83, 207);
-} 
+}
 
 .main .content-creator:hover {
     color: rgb(190, 11, 11);
@@ -145,18 +149,50 @@ section{
 }
 
 @keyframes insta {
-    0% { color: #405DE6; }
-    10% { color: #5B51D8; }
-    20% { color: #5B51D8; }
-    30% { color: #833AB4; }
-    40% { color: #C13584; }
-    50% { color: #E1306C; }
-    60% { color: #FD1D1D; }
-    70% { color: #F56040; }
-    80% { color: #777737; }
-    90% { color: #FCAF45; }
-    100% { color: #FFDC80; }
-} 
+    0% {
+        color: #405DE6;
+    }
+
+    10% {
+        color: #5B51D8;
+    }
+
+    20% {
+        color: #5B51D8;
+    }
+
+    30% {
+        color: #833AB4;
+    }
+
+    40% {
+        color: #C13584;
+    }
+
+    50% {
+        color: #E1306C;
+    }
+
+    60% {
+        color: #FD1D1D;
+    }
+
+    70% {
+        color: #F56040;
+    }
+
+    80% {
+        color: #777737;
+    }
+
+    90% {
+        color: #FCAF45;
+    }
+
+    100% {
+        color: #FFDC80;
+    }
+}
 
 
 /* Projects Section */
@@ -164,11 +200,11 @@ section{
     background-color: #03063a;
 }
 
-#more-details{
+#more-details {
     transition: 0.3s;
 }
 
-#more-details:hover{
+#more-details:hover {
     color: white;
 }
 
@@ -428,6 +464,7 @@ section{
     transition: var(--transition-time);
 }
 
-.footer-links a:hover, .footer-links a:active {
+.footer-links a:hover,
+.footer-links a:active {
     color: #6b6565;
 }

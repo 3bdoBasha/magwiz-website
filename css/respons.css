@@ -3,11 +3,6 @@
         display: none;
     }
 
-    body{
-        background-position: center;
-        background-size: contain;
-    }
-
     .card {
         font-size: 12px;
         width: 200px;
