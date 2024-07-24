@@ -76,21 +76,14 @@
                 </div>
               </nav>
         </header>   
-
         <form id="login-form">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">إسـم الحسـاب</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" maxlength="10" minlength="10" required>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">كلمـة المـرور</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" maxlength="15" minlength="8" required>
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-              <label class="form-check-label" for="exampleCheck1">الموافقة على البنود والأحكام لتسجيل الدخول</label>
-            </div>
-            <button type="submit" class="btn btn-primary">تسجيـل الدخـول</button>
+              <label class="username">Username :</label>
+              <input type="text" minlength="8" maxlength="15" required>
+              <hr style="color: black;"/>
+              <label class="password">Password :</label>
+              <input type="password" minlength="10" maxlength="20" required>
+              <br>
+            <button type="submit" class="btn btn-primary" style="padding: 5px;width: 100px; font-weight: bolder;">Login</button>
           </form>
     </div>
     <script src="/javascript/form.js"></script>

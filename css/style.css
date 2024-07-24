@@ -164,6 +164,14 @@ section{
     background-color: #03063a;
 }
 
+#more-details{
+    transition: 0.3s;
+}
+
+#more-details:hover{
+    color: white;
+}
+
 .title {
     display: flex;
     justify-content: center;
