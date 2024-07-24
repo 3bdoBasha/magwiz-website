@@ -1,49 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form | Sign up</title>
+    <title>تسجيـل الدخـول | موقع ماجويـز</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="respons.css">
     <link rel="stylesheet" href="form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand img {
+            width: 25px;
+            height: auto;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="my-container" dir="rtl">
-    
-        <div class="my-container">
-            <header>
-                <nav class="navbar">
-                    <div class="navbar-brand">
-                        <img src="Verified-badge.png" alt="Logo" width="25px" height="auto" class="verified">
-                        <span style="color: white; font-weight: 600;">المزارع الحزيـن</span>
-                    </div>
-                    <a href="javascript:void(0);" class="burger-menu" onclick="toggleNavbar()" id="burger">
-                        <i class="fa fa-bars"></i>
-                    </a> 
-                    <ul>
-                        <li class="nav-item"><a href="index.html" class="important">الصفحة الرئيسية</a></li>     
-                        <li class="nav-item"><a href="#contact" class="nav-link">تواصل معنا</a></li>
-                        <li class="nav-item"><a href="#projects" class="nav-link">المشاريع</a></li>
-                        <li class="nav-item"><a href="form.html" class="nav-link">تسجيل الدخـول</a></li>
-                        <li class="nav-item"><a href="#sugg" class="nav-link">الإقتـراحات</a></li>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#" id="brand-link">
+                    <img id="verified" src="Verified-badge.png" alt="">
+                    المـزارع الحزيـن
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">الرئيسـية</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects">المشـاريـع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصـل معـي</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#sugg">الإقتـراحات</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#discord-status">سيرفـر الديسكـورد</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            حسابــي الشخصــي
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item text-white" href="form.html">تسجيـل الدخـول</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item text-white" href="soon.html">لوحـة الحسـاب</a></li>
+                        </ul>
+                      </li>
                     </ul>
-                </nav>
-            </header>   
-</div>
-    <form class="formAll">
-        <input type="text" name="username" placeholder="Username" required minlength="8">
-        <br>
-        <input type="password" name="password" placeholder="Password" required minlength="10">
-        <br>
-        <input type="text" name="email" placeholder="Email" required>
-        <br>
-        <br>
-        <input type="submit" name="submit" class="submit">
-        <input type="reset" name="reset" class="reset">
-        <br>
-        <br>
-        <label for="check" name="check" id="check"><input type="checkbox" id="check">  Do You Read Privacy & Safety </label>
-    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>   
+
+        <form id="login-form">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Username</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" maxlength="10" minlength="10" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" maxlength="15" minlength="8" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+              <label class="form-check-label" for="exampleCheck1">Click if you accept privacy & policy rules</label>
+            </div>
+            <button type="submit" class="btn btn-primary">تسجيـل الدخـول</button>
+          </form>
+    </div>
+    <script src="form.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb4Yw35P2FTT23iE2yDkFv5U6B1MRdZRaLr5zMxT8f2B9gZhT" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha384-pprn3073KE6tl6Sc2zJFfujorN3zY4eRP0DyKQe8kh5a+AM8C/1lPJ0CyI0iI5iZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script>
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // منع الإرسال الافتراضي للنموذج
+    
+    // تغيير العلامة التجارية (البراند) في النافبار
+    const brandLink = document.getElementById('brand-link');
+    brandLink.innerHTML = `
+        <img id="verified" src="Verified-badge.png" alt="">
+        الحساب
+    `;
+
+    // توجيه المستخدم إلى الصفحة الرئيسية
+    window.location.href = 'index.html';
+});
+</script>
 </body>
 </html>

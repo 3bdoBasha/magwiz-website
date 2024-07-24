@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
-    background-image: url(bg.jpg);
+    background-image: url(bg3.jpg) !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,11 +15,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 form {
-    margin-top: 10%;
+    margin-top: 30%;
     background: linear-gradient(#282629,#272727);
+    box-shadow: rgba(0, 0, 0, 1.35) 0px 5px 15px;
     border-radius: 5px;
     padding: 60px;
 }
@@ -30,31 +33,22 @@ form {
 
 form input {
     font-size: 15px;
-    padding: 0 10px;
+    padding: 5px;
     background-color: #182030;
-    border-radius: 6px;
+    border-radius: 20rem;
     border: #474747 solid 1px;
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
 }
 
-form input::placeholder {
-    color: rgb(255, 255, 255);
+form input::placeholder{
+    color: #282629;
 }
 
-
-form .submit,.reset{
-    border: 1px solid #444444;
-    background-color: #2a2a38;
-    border-radius: 5px;
-    padding: 2px 10px;
-    cursor: pointer;
-    transition: 0.4s ease-out;
-    margin-left: 5px;
+form label {
     color: white;
 }
 
-form .submit:hover,.reset:hover {
-    transform: scale(1.1);
-}
 #check {
     color: white;
     font-weight: 600;
