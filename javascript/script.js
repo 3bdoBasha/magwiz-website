@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         request.send(JSON.stringify(params));
 
-        alert("تم إرسال اقتراحك بنجاح!");
+        alert("تم إرسال اقتراحك بنجاح ، إنتظر ليتم تفعيله!");
         suggestionForm.reset();
     });
 });

@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         request.send(JSON.stringify(params));
         
-        alert("تم إرسال حسابك !")
+        alert("تم إرسال حسابك ، إنتظر ليتم تفعيله!")
 
         suggestionForm.reset();
     });
