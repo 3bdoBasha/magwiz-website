@@ -79,17 +79,17 @@
         <form id="login-form">
               <h2 style="color: white;font-weight: 800;">لوحة تسجيل الدخول</h2>
               <br>
-              <label class="username">إسم المستخدم :</label>
-              <input type="text" minlength="8" maxlength="15" required>
+              <label class="username" name="username">إسم المستخدم :</label>
+              <input type="text" minlength="8" maxlength="15" required id="username">
               <br />
               <br />
-              <label class="password">كلمة المرور :</label>
-              <input type="password" minlength="10" maxlength="20" required>
+              <label class="password" name="password">كلمة المرور :</label>
+              <input type="password" minlength="10" maxlength="20" required id="password">
               <br>
             <button type="submit" id="login" class="btn btn-primary" style="padding: 5px;width: 100px; font-weight: bolder;">تسجيـل</button>
           </form>
     </div>
-    <script src="../javascript/form.js"></script>
+<script src="../javascript/form.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb4Yw35P2FTT23iE2yDkFv5U6B1MRdZRaLr5zMxT8f2B9gZhT" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha384-pprn3073KE6tl6Sc2zJFfujorN3zY4eRP0DyKQe8kh5a+AM8C/1lPJ0CyI0iI5iZ" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -101,14 +101,13 @@
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    const brandLink = document.getElementById('brand-link');
+    const brandLink = document.getElementById('navbar-brand');
     brandLink.innerHTML = `
-        <img id="verified" src="../imgs/Verified-badge.png" alt="Verified Badge">
+        <img id="verified" src="../imgs/username.png" alt="Verified Badge">
         الحساب
     `;
 
     window.location.href = '../html/index.html';
-    alert("تم تسجيل دخولك بنجاح إنتظر تفعيـلك .")
 });
 </script>
 </body>
