@@ -1,3 +1,4 @@
+
 :root {
     --main-color: #0056f7;
     --hover-color: #0044cc;
@@ -5,7 +6,7 @@
     --gray-color: #2d2d2d;
     --light-gray-color: #f9f9f9;
     --transition-time: 0.3s;
-    --font-main: Cairo;
+    --font-main: 'Readex Pro',sans-serif;
 }
 
 
