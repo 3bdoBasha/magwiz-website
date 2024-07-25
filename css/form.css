@@ -30,8 +30,8 @@ body {
     margin-top: 150px;
     margin-left: 50px;
     padding: 50px;
-    width: 380px;
-    height: 370px;
+    width: 420px;
+    height: 430px;
     border-radius: 10px;
     box-shadow: 3px 5px 7px 4px rgba(0, 0, 0, 0.3);
     background-color: #009dff;
@@ -51,22 +51,22 @@ form input {
     transition: 0.3s;
     direction: ltr;
     transform: skewX(-5deg);
-    border: rgb(0, 132, 255) solid 2px;
-    border-bottom: 5px solid rgb(17, 109, 230);
+    border: rgb(0, 132, 255) solid 3px;
+    border-bottom: 7px solid rgb(17, 109, 230);
     padding-bottom: 10px;
 }
 
 form input:focus {
     border: rgb(0, 132, 255) solid 2px;
     outline: none;
-    border-bottom: 5px solid rgb(17, 109, 230);
+    border-bottom: 9px solid rgb(17, 109, 230);
     background-color: #090a44;
 
 }
 
 .username {
     display: block;
-    text-align: left;
+    text-align: right;
     padding-bottom: 10px;
     color: white;
     font-size: 17px;
@@ -74,7 +74,7 @@ form input:focus {
 
 .password {
     display: block;
-    text-align: left;
+    text-align: right;
     padding-bottom: 10px;
     color: white;
     font-size: 17px;
@@ -82,8 +82,8 @@ form input:focus {
 }
 
 #login {
-    border-bottom: #2f5ad1 solid 8px;
-    border-right: #2f37b3 solid 5px;
+    border-bottom: #1f4ac2 solid 8px;
+    border-right: #2f5db3 solid 8px;
     transform: skewX(-10deg);
     border-radius: 9px;
     transition: 0.4s;
@@ -91,6 +91,7 @@ form input:focus {
 
 #login:hover {
     border-bottom: #1a3a92 solid 5px;
+    border-right: #2f5db3 solid 5px;
 }
 
 #login::first-line {
