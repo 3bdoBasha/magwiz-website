@@ -1,5 +1,5 @@
 @media screen and (max-width: 868px) {
-    header nav ul li{
+    header nav ul li {
         display: none;
     }
 
@@ -8,17 +8,17 @@
         width: 200px;
     }
 
-    .my-container nav{
+    .my-container nav {
         position: none;
         margin-left: 70%;
     }
-    
 
-    section{
+
+    section {
         padding: 10px 50px 100px;
     }
 
-    #suggestion-form{
+    #suggestion-form {
         width: 350px;
     }
 
@@ -29,25 +29,45 @@
     .content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -50px;
+    }
+
+    .content .title {
+        text-align: center;
     }
 
     body {
         font-size: 15px;
+        margin-left: -20px
     }
 
-    section{
+    section {
         padding: 10px 50px 100px;
     }
 
+    .main span {
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+    }
+
+
 }
 
-    
+
 @media screen and (max-width: 700px) {
-    header ul li{
+    header ul li {
         display: none;
     }
 
-    .my-container nav{
+    .my-container nav {
         position: none;
     }
 
@@ -63,31 +83,43 @@
     section img {
         width: 100px;
     }
-    
+
+    .main span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
-    .burger-menu{
+    .burger-menu {
         margin-left: -200px;
 
     }
 
-    .my-container nav{
+    .my-container nav {
         position: none;
     }
 
     .main h3 {
         margin-left: -20px;
     }
+
+    .main span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 780px) {
 
-    .my-container nav{
+    .my-container nav {
         position: none;
     }
 
-    body{
+    body {
         display: flex;
         justify-content: center;
     }
@@ -95,10 +127,10 @@
 
 @media screen and (max-width: 450px) {
 
-body{
-    display: flex;
-    justify-content: center;
-}
+    body {
+        display: flex;
+        justify-content: center;
+    }
 
     .main {
         font-size: 15px;
