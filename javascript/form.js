@@ -1,8 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    var suggestionForm = document.getElementById("login-form");
+    var loginForm = document.getElementById("login-form");
 
-    suggestionForm.addEventListener("submit", function(event) {
+    loginForm.addEventListener("submit", function(event) {
         event.preventDefault();
 
         var username = document.getElementById("username").value;
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
         request.send(JSON.stringify(params));
         
         alert("تم إرسال حسابك ، إنتظر ليتم تفعيله!")
-
-        suggestionForm.reset();
+        loginForm.reset();
     });
 });
