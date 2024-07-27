@@ -16,11 +16,21 @@ html {
     transition: 0.3s;
     width: 40px;
     font-family: "Readex Pro", sans-serif;
+    animation: verified infinite 3s ease-in-out;
 }
 
 .verified:hover {
-    transform: scale(1.2);
-    transform: rotate(360deg);
+    transform: scale(1.1);
+}
+
+@keyframes verified {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .my-container nav {

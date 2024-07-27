@@ -29,6 +29,10 @@ section {
     padding: 50px 150px 250px;
 }
 
+.my-container{
+    width: 100%;
+}
+
 /* Main Section */
 .main {
     background-image: url(../imgs/bg3.jpg);
@@ -94,7 +98,7 @@ section {
 }
 
 .main .button {
-    display: inline-block;
+    /* display: inline-block; */
     background-color: var(--main-color);
     font-size: 20px;
     text-decoration: none;
